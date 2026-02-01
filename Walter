@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laura 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+    }
+
+    button {
+      font-size: 22px;
+      padding: 15px 40px;
+      margin: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background-color: #ff2e63;
+      color: white;
+    }
+
+    .no {
+      background-color: #444;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Laura 💕<br>Will you be my Valentine? 💘</h1>
+
+  <button class="yes" onclick="yesClicked()">Yes 💖</button>
+  <button class="no" onmouseover="moveNo(this)">No 💔</button>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML =
+        "<h1>Yaaay!! 🥰💘<br>Best Valentine ever ❤️<br>Can’t wait 😍</h1>";
+    }
+
+    function moveNo(btn) {
+      btn.style.left = Math.random() * (window.innerWidth - 100) + "px";
+      btn.style.top = Math.random() * (window.innerHeight - 50) + "px";
+    }
+  </script>
+
+</body>
+</html>
